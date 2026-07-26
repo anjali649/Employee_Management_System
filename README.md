@@ -460,7 +460,7 @@ git push origin feature/FeatureName
 
 <div align="Left">
 
-# ⭐ If you like this project, don't forget to star the repository!
+ ⭐ If you like this project, don't forget to star the repository!
 
 **Built with ❤️ using React, Node.js, Express, MongoDB & Tailwind CSS**
 
