@@ -27,7 +27,7 @@ A scalable, enterprise-inspired **MERN Stack Employee Management System** built 
 
 
 
-# 📖 About the Project
+## 📖 About the Project
 
 **Crewline Workforce OS** is a full-stack Employee Management System designed to simplify workforce management through a secure, scalable, and modern web application.
 
@@ -52,7 +52,7 @@ The application follows modern software architecture principles with reusable co
 
 
 
-## 👨‍💼 Employee Management
+### 👨‍💼 Employee Management
 
 Administrators can:
 
@@ -77,7 +77,7 @@ Employee records include:
 
 
 
-## 📅 Attendance Management
+### 📅 Attendance Management
 
 Built-in attendance module supporting:
 
@@ -105,7 +105,7 @@ Future enhancements include:
 
 
 
-## ✅ Task Management
+### ✅ Task Management
 
 Admins can:
 
@@ -124,7 +124,7 @@ Task statuses include:
 
 ---
 
-## 📊 Dashboard
+### 📊 Dashboard
 
 Modern dashboard displaying:
 
@@ -144,21 +144,8 @@ Future analytics:
 - Employee Productivity
 - Attendance Charts
 
----
 
-## 🔔 Notifications
-
-Built-in notification system:
-
-- Task Assigned
-- Task Updated
-- Attendance Alerts
-- System Notifications
-- Important Announcements
-
----
-
-## 🔎 Search & Filtering
+###  Search & Filtering
 
 Fast search functionality for:
 
@@ -175,7 +162,7 @@ Advanced filtering by:
 
 ---
 
-## 🎨 Modern User Interface
+### Modern User Interface
 
 Designed with a clean enterprise dashboard inspired by modern SaaS applications.
 
@@ -192,9 +179,9 @@ Features include:
 
 ---
 
-# 🛠 Technology Stack
+## Technology Stack
 
-## Frontend
+### Frontend
 
 - React 19
 - Vite
@@ -204,9 +191,8 @@ Features include:
 - Lucide React Icons
 - Axios
 
----
 
-## Backend
+### Backend
 
 - Node.js
 - Express.js
@@ -217,9 +203,8 @@ Features include:
 - dotenv
 - cors
 
----
 
-## Database
+### Database
 
 MongoDB Atlas
 
@@ -234,7 +219,7 @@ Collections include:
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```text
 Employee-Management-System/
@@ -274,9 +259,9 @@ Employee-Management-System/
 
 ---
 
-# 🚀 Getting Started
+## 🚀 Getting Started
 
-## Prerequisites
+### Prerequisites
 
 Install:
 
@@ -287,7 +272,7 @@ Install:
 
 ---
 
-# Backend Setup
+## Backend Setup
 
 ```bash
 cd backend
@@ -313,7 +298,7 @@ npm run dev
 
 ---
 
-# Frontend Setup
+## Frontend Setup
 
 ```bash
 cd Frontend
@@ -331,7 +316,7 @@ http://localhost:5173
 
 ---
 
-# Default Admin Login
+## Default Admin Login
 
 ```text
 Email:
@@ -345,7 +330,7 @@ Anjali@123
 
 ---
 
-# API Features
+## API Features
 
 Authentication
 
@@ -392,7 +377,7 @@ DELETE /api/tasks/:id
 
 ---
 
-# Security Features
+## Security Features
 
 - JWT Authentication
 - Password Hashing
@@ -403,7 +388,7 @@ DELETE /api/tasks/:id
 
 ---
 
-# Future Improvements
+## Future Improvements
 
 - Employee Dashboard
 - Admin Dashboard Analytics
@@ -424,13 +409,13 @@ DELETE /api/tasks/:id
 
 ---
 
-# Deployment
+## Deployment
 
 - Render
 
 ---
 
-# Contributing
+## Contributing
 
 Contributions are welcome.
 
