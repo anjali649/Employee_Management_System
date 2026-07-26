@@ -50,7 +50,7 @@ The application follows modern software architecture principles with reusable co
 - Persistent login sessions
 - Secure logout functionality
 
----
+
 
 ## 👨‍💼 Employee Management
 
@@ -75,7 +75,7 @@ Employee records include:
 - Salary
 - Employment Status
 
----
+
 
 ## 📅 Attendance Management
 
@@ -103,7 +103,7 @@ Future enhancements include:
 - Monthly Attendance Summary
 - CSV & PDF Export
 
----
+
 
 ## ✅ Task Management
 
