@@ -41,177 +41,33 @@ The application follows modern software architecture principles with reusable co
 
 # ✨ Features
 
-## 🔐 Authentication & Authorization
-
-- Secure JWT Authentication
-- Password encryption using bcrypt
-- Role-Based Access Control (RBAC)
-- Protected API routes
-- Persistent login sessions
-- Secure logout functionality
-
----
-
-## 👨‍💼 Employee Management
-
-Administrators can:
-
-- Add new employees
-- Edit employee information
-- Delete employees
-- Activate/Deactivate employees
-- View employee profiles
-- Search employees instantly
-- Manage departments and designations
-
-Employee records include:
-
-- Name
-- Email
-- Phone Number
-- Department
-- Designation
-- Joining Date
-- Salary
-- Employment Status
+- 🔐 JWT Authentication & Role-Based Access Control (RBAC)
+- 👨‍💼 Employee Management (CRUD Operations)
+- 📅 Attendance Management (Check-In / Check-Out & Working Hours)
+- ✅ Task Assignment & Tracking
+- 📊 Interactive Admin Dashboard
+- 🔔 Real-time Notifications
+- 🔍 Search & Filtering
+- 📱 Fully Responsive UI
+- 🎨 Modern Dashboard built with Tailwind CSS
+- ⚡ RESTful API powered by Express & MongoDB
 
 ---
 
-## 📅 Attendance Management
+# 🛠 Tech Stack
 
-Built-in attendance module supporting:
-
-- Employee Check-In
-- Employee Check-Out
-- Working Hours Calculation
-- Present / Late / Absent Status
-- Daily Attendance Records
-- Attendance History
-
-Attendance information stores:
-
-- Date
-- Check-In Time
-- Check-Out Time
-- Working Hours
-- Attendance Status
-
-Future enhancements include:
-
-- Attendance Analytics
-- Attendance Reports
-- Monthly Attendance Summary
-- CSV & PDF Export
-
----
-
-## ✅ Task Management
-
-Admins can:
-
-- Create Tasks
-- Assign Tasks
-- Set Categories
-- Set Deadlines
-- Monitor Progress
-
-Task statuses include:
-
-- Pending
-- In Progress
-- Completed
-- Failed
-
----
-
-## 📊 Dashboard
-
-Modern dashboard displaying:
-
-- Total Employees
-- Active Employees
-- Tasks Assigned
-- Pending Tasks
-- Completed Tasks
-- Attendance Overview
-- Recent Activities
-- Notifications
-
-Future analytics:
-
-- Department Performance
-- Monthly Reports
-- Employee Productivity
-- Attendance Charts
-
----
-
-## 🔔 Notifications
-
-Built-in notification system:
-
-- Task Assigned
-- Task Updated
-- Attendance Alerts
-- System Notifications
-- Important Announcements
-
----
-
-## 🔎 Search & Filtering
-
-Fast search functionality for:
-
-- Employees
-- Tasks
-- Attendance
-
-Advanced filtering by:
-
-- Department
-- Status
-- Date
-- Employee
-
----
-
-## 🎨 Modern User Interface
-
-Designed with a clean enterprise dashboard inspired by modern SaaS applications.
-
-Features include:
-
-- Responsive Layout
-- Professional Sidebar Navigation
-- Clean Dashboard Cards
-- Beautiful Data Tables
-- Animated Components
-- Consistent Design System
-- Dark/Light Ready Architecture
-- Mobile Friendly Layout
-
----
-
-# 🛠 Technology Stack
-
-## Frontend
-
+### Frontend
 - React 19
 - Vite
 - Tailwind CSS v4
 - React Router DOM
-- Context API
-- Lucide React Icons
 - Axios
+- Lucide React
 
----
-
-## Backend
-
+### Backend
 - Node.js
 - Express.js
-- MongoDB
-- Mongoose
+- MongoDB & Mongoose
 - JWT Authentication
 - bcrypt
 - dotenv
@@ -219,18 +75,52 @@ Features include:
 
 ---
 
-## Database
+# 🚀 Getting Started
 
-MongoDB Atlas
+## Prerequisites
 
-Collections include:
+- Node.js (v18+)
+- MongoDB Atlas
+- Git
 
-- Users
-- Tasks
-- Attendance
-- Departments
-- Notifications
-- Projects
+### Backend
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+Create a `.env` file:
+
+```env
+PORT=5001
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
+
+### Frontend
+
+```bash
+cd Frontend
+npm install
+npm run dev
+```
+
+Visit:
+
+```
+http://localhost:5173
+```
+
+---
+
+# 🔑 Demo Credentials
+
+```text
+Email: anjali@gmail.com
+Password: Anjali@123
+```
 
 ---
 
@@ -240,228 +130,57 @@ Collections include:
 Employee-Management-System/
 │
 ├── Frontend/
-│   ├── src/
-│   │
 │   ├── components/
-│   │   ├── Auth/
-│   │   ├── Dashboard/
-│   │   ├── Employees/
-│   │   ├── Attendance/
-│   │   ├── Tasks/
-│   │   ├── Notifications/
-│   │   └── Shared/
-│   │
 │   ├── pages/
-│   ├── context/
-│   ├── hooks/
 │   ├── utils/
-│   ├── assets/
-│   ├── App.jsx
-│   └── main.jsx
+│   ├── context/
+│   └── App.jsx
 │
 ├── backend/
 │   ├── controllers/
 │   ├── middleware/
 │   ├── models/
 │   ├── routes/
-│   ├── config/
 │   ├── seed.js
-│   ├── server.js
-│   └── package.json
+│   └── server.js
 │
 └── README.md
 ```
 
 ---
 
-# 🚀 Getting Started
-
-## Prerequisites
-
-Install:
-
-- Node.js (v18 or later)
-- MongoDB Atlas Account
-- Git
-`
-
----
-
-# Backend Setup
-
-```bash
-cd backend
-
-npm install
-```
-
-Create a `.env`
-
-```env
-PORT=5001
-
-MONGO_URI=your_mongodb_connection_string
-
-JWT_SECRET=your_secret_key
-```
-
-Start backend
-
-```bash
-npm run dev
-```
-
----
-
-# Frontend Setup
-
-```bash
-cd Frontend
-
-npm install
-
-npm run dev
-```
-
-Open
-
-```
-http://localhost:5173
-```
-
----
-
-# Default Admin Login
-
-```text
-Email:
-anjali@gmail.com
-
-Password:
-Anjali@123
-```
-
-> Replace these with your own seeded admin credentials if you've customized them.
-
----
-
-# API Features
-
-Authentication
-
-```
-POST /api/auth/login
-POST /api/auth/register
-```
-
-Employees
-
-```
-GET /api/employees
-
-POST /api/employees
-
-PUT /api/employees/:id
-
-DELETE /api/employees/:id
-```
-
-Attendance
-
-```
-GET /api/attendance/:employeeId
-
-POST /api/attendance/:employeeId/mark
-
-POST /api/attendance/check-in
-
-POST /api/attendance/check-out
-```
-
-Tasks
-
-```
-GET /api/tasks
-
-POST /api/tasks
-
-PUT /api/tasks/:id
-
-DELETE /api/tasks/:id
-```
-
----
-
-# Security Features
-
-- JWT Authentication
-- Password Hashing
-- Protected Routes
-- Role-Based Authorization
-- Environment Variables
-- Secure API Architecture
-
----
-
-# Future Improvements
-
-- Employee Dashboard
-- Admin Dashboard Analytics
-- Attendance Charts
-- Leave Management
-- Payroll Module
-- Performance Reviews
-- Project Management
-- Team Calendar
-- Email Notifications
-- File Uploads
-- Profile Pictures
-- Report Generation
-- PDF & Excel Export
-- Two-Factor Authentication
-- Dark Mode
-
-
----
-
-# Deployment
+# 🚀 Deployment
 
 - Render
 
 ---
 
-# Contributing
+# 📌 Roadmap
 
-Contributions are welcome.
-
-1. Fork the repository
-2. Create your feature branch
-
-```bash
-git checkout -b feature/FeatureName
-```
-
-3. Commit your changes
-
-```bash
-git commit -m "Added Feature"
-```
-
-4. Push to GitHub
-
-```bash
-git push origin feature/FeatureName
-```
-
-5. Open a Pull Request
+- Employee Dashboard
+- Attendance Analytics
+- Leave Management
+- Payroll Module
+- Performance Reports
+- Email Notifications
+- Dark Mode
 
 ---
 
+# 🤝 Contributing
+
+```bash
+git checkout -b feature/your-feature
+git commit -m "Add feature"
+git push origin feature/your-feature
+```
+
+---
 
 <div align="center">
 
-### ⭐ If you like this project, don't forget to star the repository!
+⭐ **If you found this project helpful, consider giving it a star!**
 
-**Built with ❤️ using React, Node.js, Express, MongoDB & Tailwind CSS**
+Built with ❤️ using **React • Node.js • Express • MongoDB • Tailwind CSS**
 
 </div>
