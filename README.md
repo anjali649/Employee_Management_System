@@ -39,9 +39,9 @@ The application follows modern software architecture principles with reusable co
 
 
 
-# ✨ Features
+### ✨ Features
 
-## 🔐 Authentication & Authorization
+#### 🔐 Authentication & Authorization
 
 - Secure JWT Authentication
 - Password encryption using bcrypt
