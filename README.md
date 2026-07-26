@@ -25,7 +25,7 @@ A scalable, enterprise-inspired **MERN Stack Employee Management System** built 
 
 </div>
 
----
+
 
 # 📖 About the Project
 
@@ -37,7 +37,7 @@ Originally developed as a frontend prototype, the application has been transform
 
 The application follows modern software architecture principles with reusable components, modular backend structure, responsive layouts, and a professional dashboard UI suitable for real-world HR and workforce management.
 
----
+
 
 # ✨ Features
 
