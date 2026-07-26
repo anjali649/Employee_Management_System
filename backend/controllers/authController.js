@@ -115,4 +115,38 @@ const updateProfile = async (req, res) => {
     }
 
 };
+
+const loginUser = async (req, res) => {
+    const { email, password } = req.body;
+
+    try {
+        console.log("Login attempt:", email);
+
+        const user = await User.findOne({ email });
+
+        console.log("User found:", !!user);
+
+        if (user) {
+            const isMatch = await user.matchPassword(password);
+            console.log("Password match:", isMatch);
+
+            if (isMatch) {
+                return res.json({
+                    _id: user._id,
+                    name: user.name,
+                    email: user.email,
+                    role: user.role,
+                    tasks: user.tasks,
+                    token: generateToken(user._id),
+                });
+            }
+        }
+
+        res.status(401).json({ message: "Invalid email or password" });
+
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Server error" });
+    }
+};
 module.exports = { loginUser, getMe, getProfile, updateProfile };
