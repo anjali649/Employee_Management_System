@@ -56,7 +56,7 @@ The application follows modern software architecture principles with reusable co
 
 # 🛠 Tech Stack
 
-### Frontend
+#Frontend
 - React 19
 - Vite
 - Tailwind CSS v4
@@ -64,7 +64,7 @@ The application follows modern software architecture principles with reusable co
 - Axios
 - Lucide React
 
-### Backend
+# Backend
 - Node.js
 - Express.js
 - MongoDB & Mongoose
@@ -77,13 +77,13 @@ The application follows modern software architecture principles with reusable co
 
 # 🚀 Getting Started
 
-## Prerequisites
+# Prerequisites
 
 - Node.js (v18+)
 - MongoDB Atlas
 - Git
 
-### Backend
+# Backend
 
 ```bash
 cd backend
@@ -99,7 +99,7 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 ```
 
-### Frontend
+# Frontend
 
 ```bash
 cd Frontend
